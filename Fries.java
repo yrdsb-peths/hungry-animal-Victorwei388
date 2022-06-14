@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Fries here.
+ * These fries are good
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Victor 
+ * @version June
  */
 public class Fries extends Actor
 {
@@ -15,5 +15,6 @@ public class Fries extends Actor
     public void act()
     {
         // Add your action code here.
+        setLocation(getX(), getY() + 1);
     }
 }
