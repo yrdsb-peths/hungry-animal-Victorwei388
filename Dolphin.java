@@ -23,10 +23,16 @@ public class Dolphin extends Actor
         {
             move(1);
         }
-        
-        // Removes the food if the dolphin eats it
-        removeTouching(Fries.class);
-        
-        
+    }
+    
+    public void eat()
+    {
+        if(isTouching(Fries.class))
+        {
+            removeTouching(Fries.class);
+            // MyWorld world = (MyWorld) getWorld();
+            // world.createFries();
+            // world.increaseScore();
+        }
     }
 }

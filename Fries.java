@@ -16,5 +16,12 @@ public class Fries extends Actor
     {
         // Add your action code here.
         setLocation(getX(), getY() + 1);
+        if(isTouching(Dolphin.class))
+        {
+            // removeTouching(Fries.class);
+            MyWorld world = (MyWorld) getWorld();
+            // world.createFries();
+            world.increaseScore();
+        }
     }
 }
